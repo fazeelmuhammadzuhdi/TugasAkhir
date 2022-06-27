@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/selector1" />
+
+        <ImageView
+            android:layout_width="@dimen/_50ssp"
+            android:layout_height="@dimen/_50ssp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:src="@drawable/person" />
+
+
+        <ImageView
+            android:id="@+id/cari"
+            android:layout_width="@dimen/_10ssp"
+            android:layout_height="@dimen/_10ssp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:src="@drawable/cari" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_toRightOf="@id/cari"
+            android:hint="@string/cari_layanan_makanan_tujuan"
+            android:src="@drawable/person"
+            android:textSize="@dimen/_10sdp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tengah"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:background="@drawable/selector2">
+
+        <RelativeLayout
+            android:id="@+id/ly2"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:background="@drawable/selector3">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/file" />
+
+            <TextView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_toRightOf="@id/logo"
+                android:text="Rp. 100.000"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9sdp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/ly3"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_toRightOf="@id/ly2">
+
+            <ImageView
+                android:id="@+id/satu"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:src="@drawable/upp" />
+
+            <TextView
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/satu"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:text="Isi Saldo"
+                android:textColor="@color/colorOnPrimary"
+                android:textSize="@dimen/_8sdp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ly4"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_toRightOf="@id/ly3">">
+
+            <ImageView
+                android:id="@+id/dua"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:src="@drawable/plus" />
+
+            <TextView
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dua"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:text="Bayar"
+                android:textColor="@color/colorOnPrimary"
+                android:textSize="@dimen/_8sdp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ly5"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_toRightOf="@id/ly4">">
+
+            <ImageView
+                android:id="@+id/tiga"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:src="@drawable/rocket" />
+
+            <TextView
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tiga"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:text="Eksplor"
+                android:textColor="@color/colorOnPrimary"
+                android:textSize="@dimen/_8sdp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/akhir"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_105sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_170sdp"
+        android:background="@drawable/selector2">
+
+        <RelativeLayout
+            android:id="@+id/ly6"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginLeft="@dimen/_3sdp">
+
+            <ImageView
+                android:id="@+id/gambar1"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:src="@drawable/motor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gambar1"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:text="GoRide"
+                android:textColor="@color/colorOnPrimary"
+                android:textSize="@dimen/_8sdp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ly7"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_toRightOf="@id/ly6">
+
+            <ImageView
+                android:id="@+id/gambar2"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:src="@drawable/car" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gambar2"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:text="GoCar"
+                android:textColor="@color/colorOnPrimary"
+                android:textSize="@dimen/_8sdp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ly8"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_toRightOf="@id/ly7">
+
+            <ImageView
+                android:id="@+id/gambar3"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:src="@drawable/food" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gambar3"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:text="GoFood"
+                android:textColor="@color/colorOnPrimary"
+                android:textSize="@dimen/_8sdp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ly9"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_toRightOf="@id/ly8">
+
+            <ImageView
+                android:id="@+id/gambar4"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:src="@drawable/send" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gambar4"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:text="GoSend"
+                android:textColor="@color/colorOnPrimary"
+                android:textSize="@dimen/_8sdp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ly10"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_below="@id/ly6"
+            android:layout_marginLeft="@dimen/_3sdp">
+
+            <ImageView
+                android:id="@+id/gambar6"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:src="@drawable/mart" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gambar6"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:text="GoMart"
+                android:textColor="@color/colorOnPrimary"
+                android:textSize="@dimen/_8sdp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ly11"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_below="@id/ly7"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_toRightOf="@+id/ly10">
+
+            <ImageView
+                android:id="@+id/gambar7"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:src="@drawable/pulsa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gambar7"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:text="GoPulsa"
+                android:textColor="@color/colorOnPrimary"
+                android:textSize="@dimen/_8sdp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ly12"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_below="@id/ly8"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_toRightOf="@+id/ly11">
+
+            <ImageView
+                android:id="@+id/gambar8"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:src="@drawable/mart" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gambar8"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:text="GoClub"
+                android:textColor="@color/colorOnPrimary"
+                android:textSize="@dimen/_8sdp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ly13"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_below="@id/ly9"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_toRightOf="@+id/ly12">
+
+            <ImageView
+                android:id="@+id/gambar9"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:src="@drawable/lain" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gambar9"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:text="Lainnya"
+                android:textColor="@color/colorOnPrimary"
+                android:textSize="@dimen/_8sdp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/akhir">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_50sdp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_250sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gojek" />
+
+                <ImageView
+                    android:layout_width="@dimen/_250sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gojek" />
+
+                <ImageView
+                    android:layout_width="@dimen/_250sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gojek"
+
+                    />
+
+                <ImageView
+                    android:layout_width="@dimen/_250sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gojek"
+
+                    />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
