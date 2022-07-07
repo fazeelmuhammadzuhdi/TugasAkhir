@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55A19F"
+    android:gravity="center"
+    tools:context=".PerbandinganBindingActivity">
+
+    <Button
+        android:id="@+id/find"
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:backgroundTint="@color/black"
+        android:text="FIND VIEW BY ID"
+        android:textColor="@color/colorPrimaryVariant"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_kotsin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_below="@+id/find"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/black"
+        android:text="KOTLIN SINTENTIC"
+        android:textColor="@color/colorPrimaryVariant"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_binding"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_below="@+id/btn_kotsin"
+        android:backgroundTint="@color/black"
+        android:text="VIEW BINDING"
+        android:textColor="@color/colorPrimaryVariant"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold" />
+
+
+
+
+</RelativeLayout>

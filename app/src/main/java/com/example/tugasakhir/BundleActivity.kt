@@ -15,8 +15,9 @@ class BundleActivity : AppCompatActivity() {
 
 //       binding.hasil.text.toString()
 
+
         val nama = intent.getStringExtra("EXTRA_NAMA")
-        val usia = intent.getIntExtra("EXTRA_USIA", 0)
+        val usia = intent.getStringExtra("EXTRA_USIA")
         val asal = intent.getStringExtra("EXTRA_ASAL")
 
         val hasilData = "Nama Anda Adalah : $nama \n" +
@@ -24,6 +25,5 @@ class BundleActivity : AppCompatActivity() {
                 "Asal Anda Adalah : $asal \t\t\t\t"
 
         binding.hasil.text = hasilData
-
     }
 }

@@ -14,21 +14,36 @@
         android:theme="@style/Theme.TugasAkhir"
         tools:targetApi="31">
         <activity
-            android:name=".ProfilActivity"
-            android:exported="false" />
-        <activity
-            android:name=".KalkulatorActivity"
-            android:exported="false" />
-        <activity
-            android:name=".NavigationActivity"
-            android:exported="true"
-            android:label="@string/title_activity_navigation">
+            android:name=".SplashScreenActivity"
+            android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".NavigationActivity"
+            android:exported="true"
+            android:label="@string/title_activity_navigation"/>
+        <activity
+            android:name=".PerbandinganBindingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PendaftaranTargetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PendaftaranActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KalkulatorActivity"
+            android:exported="false" />
+
+
         <activity
             android:name=".MainActivity"
             android:exported="true" />

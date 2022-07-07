@@ -4,17 +4,14 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.example.tugasakhir.databinding.ActivityMainBinding
+import com.example.tugasakhir.databinding.ActivityPendaftaranBinding
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
-
-    private lateinit var binding: ActivityMainBinding
-
+class PendaftaranActivity : AppCompatActivity() {
+    lateinit var binding: ActivityPendaftaranBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityPendaftaranBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.submit.setOnClickListener {
@@ -32,18 +29,14 @@ class MainActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            val nama =  binding.nama.text.toString()
-            val usia =  binding.usia.text.toString()
-            val asal =  binding.asal.text.toString()
 
-
-
-            Intent(this, BundleActivity::class.java).also {
-                it.putExtra("EXTRA_NAMA", nama)
-                it.putExtra("EXTRA_USIA", usia)
-                it.putExtra("EXTRA_ASAL", asal)
-                startActivity(it)
-            }
+            val bundle = Bundle()
+            bundle.putString("nama", binding.nama.text.toString())
+            bundle.putString("usia", binding.usia.text.toString())
+            bundle.putString("asal", binding.asal.text.toString())
+            val intent = Intent(this, PendaftaranTargetActivity::class.java)
+            intent.putExtras(bundle)
+            startActivity(intent)
         }
 
         binding.batal.setOnClickListener {
@@ -54,5 +47,4 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Dibersihkan", Toast.LENGTH_SHORT).show()
         }
     }
-
 }

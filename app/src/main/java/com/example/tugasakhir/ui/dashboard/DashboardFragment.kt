@@ -8,9 +8,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.tugasakhir.BundleActivity
-import com.example.tugasakhir.KalkulatorActivity
-import com.example.tugasakhir.MainActivity
+import com.example.tugasakhir.*
 import com.example.tugasakhir.databinding.FragmentDashboardBinding
 
 class DashboardFragment : Fragment() {
@@ -34,6 +32,25 @@ class DashboardFragment : Fragment() {
 
         binding.gambar1.setOnClickListener {
             val intent = Intent(this@DashboardFragment.requireContext(), MainActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.ly8.setOnClickListener {
+            val intent = Intent(this@DashboardFragment.requireContext(), PendaftaranActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.ly7.setOnClickListener {
+            val intent = Intent(this@DashboardFragment.requireContext(), ProfilActivity::class.java)
+            startActivity(intent)
+        }
+        binding.ly5.setOnClickListener {
+            val intent = Intent(this@DashboardFragment.requireContext(), PerbandinganBindingActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.orang.setOnClickListener {
+            val intent = Intent(this@DashboardFragment.requireContext(), ProfilActivity::class.java)
             startActivity(intent)
         }
 
