@@ -6,7 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".ui.dashboard.DashboardFragment">
 
+
     <RelativeLayout
+        android:id="@+id/top"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_60sdp"
         android:background="@color/colorPrimary">
@@ -47,413 +49,468 @@
             android:textSize="@dimen/_10sdp" />
     </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/tengah"
-        android:layout_width="@dimen/_230sdp"
-        android:layout_height="@dimen/_80sdp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/_100sdp"
-        android:background="@drawable/selector2">
-
-        <RelativeLayout
-            android:id="@+id/ly2"
-            android:layout_width="@dimen/_80sdp"
-            android:layout_height="@dimen/_50sdp"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="@dimen/_3sdp"
-            android:background="@drawable/selector3">
-
-            <ImageView
-                android:id="@+id/logo"
-                android:layout_width="@dimen/_25sdp"
-                android:layout_height="@dimen/_25sdp"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="10dp"
-                android:src="@drawable/file" />
-
-            <TextView
-                android:layout_width="@dimen/_50sdp"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/_2sdp"
-                android:layout_toRightOf="@id/logo"
-                android:text="Rp. 100.000"
-                android:textColor="@color/black"
-                android:textSize="@dimen/_9sdp"
-                android:textStyle="bold" />
-        </RelativeLayout>
-
-
-        <RelativeLayout
-            android:id="@+id/ly3"
-            android:layout_width="@dimen/_40sdp"
-            android:layout_height="@dimen/_45sdp"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="@dimen/_3sdp"
-            android:layout_toRightOf="@id/ly2">
-
-            <ImageView
-                android:id="@+id/satu"
-                android:layout_width="@dimen/_25sdp"
-                android:layout_height="@dimen/_25sdp"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/_5sdp"
-                android:src="@drawable/upp" />
-
-            <TextView
-                android:layout_width="@dimen/_55sdp"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/satu"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/_5sdp"
-                android:text="Isi Saldo"
-                android:textColor="@color/colorOnPrimary"
-                android:textSize="@dimen/_8sdp"
-                android:textStyle="bold" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/ly4"
-            android:layout_width="@dimen/_40sdp"
-            android:layout_height="@dimen/_45sdp"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="@dimen/_3sdp"
-            android:layout_toRightOf="@id/ly3">">
-
-            <ImageView
-                android:id="@+id/dua"
-                android:layout_width="@dimen/_25sdp"
-                android:layout_height="@dimen/_25sdp"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/_5sdp"
-                android:src="@drawable/plus" />
-
-            <TextView
-                android:layout_width="@dimen/_55sdp"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/dua"
-                android:layout_marginLeft="@dimen/_8sdp"
-                android:text="Bayar"
-                android:textColor="@color/colorOnPrimary"
-                android:textSize="@dimen/_8sdp"
-                android:textStyle="bold" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/ly5"
-            android:layout_width="@dimen/_40sdp"
-            android:layout_height="@dimen/_45sdp"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="@dimen/_3sdp"
-            android:layout_toRightOf="@id/ly4">">
-
-            <ImageView
-                android:id="@+id/tiga"
-                android:layout_width="@dimen/_25sdp"
-                android:layout_height="@dimen/_25sdp"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/_5sdp"
-                android:src="@drawable/rocket" />
-
-            <TextView
-                android:layout_width="@dimen/_55sdp"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/tiga"
-                android:layout_marginLeft="@dimen/_5sdp"
-                android:text="Eksplor"
-                android:textColor="@color/colorOnPrimary"
-                android:textSize="@dimen/_8sdp"
-                android:textStyle="bold" />
-
-        </RelativeLayout>
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/akhir"
-        android:layout_width="@dimen/_280sdp"
-        android:layout_height="@dimen/_105sdp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/_200sdp"
-        android:background="@drawable/selector2">
-
-        <RelativeLayout
-            android:id="@+id/ly6"
-            android:layout_width="@dimen/_40sdp"
-            android:layout_height="@dimen/_45sdp"
-            android:layout_marginLeft="@dimen/_20sdp">
-
-            <ImageView
-                android:id="@+id/gambar1"
-                android:layout_width="@dimen/_25sdp"
-                android:layout_height="@dimen/_25sdp"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/_5sdp"
-                android:src="@drawable/motor" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/gambar1"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/_5sdp"
-                android:text="GoRide"
-                android:textColor="@color/colorOnPrimary"
-                android:textSize="@dimen/_8sdp"
-                android:textStyle="bold" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/ly7"
-            android:layout_width="@dimen/_40sdp"
-            android:layout_height="@dimen/_45sdp"
-            android:layout_marginLeft="@dimen/_25sdp"
-            android:layout_toRightOf="@id/ly6">
-
-            <ImageView
-                android:id="@+id/gambar2"
-                android:layout_width="@dimen/_25sdp"
-                android:layout_height="@dimen/_25sdp"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/_5sdp"
-                android:src="@drawable/car" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/gambar2"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/_8sdp"
-                android:text="GoCar"
-                android:textColor="@color/colorOnPrimary"
-                android:textSize="@dimen/_8sdp"
-                android:textStyle="bold" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/ly8"
-            android:layout_width="@dimen/_40sdp"
-            android:layout_height="@dimen/_45sdp"
-            android:layout_marginLeft="@dimen/_25sdp"
-            android:layout_toRightOf="@id/ly7">
-
-            <ImageView
-                android:id="@+id/gambar3"
-                android:layout_width="@dimen/_25sdp"
-                android:layout_height="@dimen/_25sdp"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/_5sdp"
-                android:src="@drawable/food" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/gambar3"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/_5sdp"
-                android:text="GoFood"
-                android:textColor="@color/colorOnPrimary"
-                android:textSize="@dimen/_8sdp"
-                android:textStyle="bold" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/ly9"
-            android:layout_width="@dimen/_40sdp"
-            android:layout_height="@dimen/_45sdp"
-            android:layout_marginLeft="@dimen/_25sdp"
-            android:layout_toRightOf="@id/ly8">
-
-            <ImageView
-                android:id="@+id/gambar4"
-                android:layout_width="@dimen/_25sdp"
-                android:layout_height="@dimen/_25sdp"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/_5sdp"
-                android:src="@drawable/send" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/gambar4"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/_5sdp"
-                android:text="GoSend"
-                android:textColor="@color/colorOnPrimary"
-                android:textSize="@dimen/_8sdp"
-                android:textStyle="bold" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/ly10"
-            android:layout_width="@dimen/_40sdp"
-            android:layout_height="@dimen/_45sdp"
-            android:layout_below="@id/ly6"
-            android:layout_marginLeft="@dimen/_20sdp">
-
-            <ImageView
-                android:id="@+id/gambar6"
-                android:layout_width="@dimen/_25sdp"
-                android:layout_height="@dimen/_25sdp"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/_5sdp"
-                android:src="@drawable/mart" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/gambar6"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/_8sdp"
-                android:text="GoMart"
-                android:textColor="@color/colorOnPrimary"
-                android:textSize="@dimen/_8sdp"
-                android:textStyle="bold" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/ly11"
-            android:layout_width="@dimen/_40sdp"
-            android:layout_height="@dimen/_45sdp"
-            android:layout_below="@id/ly7"
-            android:layout_marginLeft="@dimen/_25sdp"
-            android:layout_toRightOf="@+id/ly10">
-
-            <ImageView
-                android:id="@+id/gambar7"
-                android:layout_width="@dimen/_25sdp"
-                android:layout_height="@dimen/_25sdp"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/_3sdp"
-                android:src="@drawable/pulsa" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/gambar7"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/_4sdp"
-                android:text="GoPulsa"
-                android:textColor="@color/colorOnPrimary"
-                android:textSize="@dimen/_8sdp"
-                android:textStyle="bold" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/ly12"
-            android:layout_width="@dimen/_40sdp"
-            android:layout_height="@dimen/_45sdp"
-            android:layout_below="@id/ly8"
-            android:layout_marginLeft="@dimen/_25sdp"
-            android:layout_toRightOf="@+id/ly11">
-
-            <ImageView
-                android:id="@+id/gambar8"
-                android:layout_width="@dimen/_25sdp"
-                android:layout_height="@dimen/_25sdp"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/_5sdp"
-                android:src="@drawable/mart" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/gambar8"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/_8sdp"
-                android:text="GoClub"
-                android:textColor="@color/colorOnPrimary"
-                android:textSize="@dimen/_8sdp"
-                android:textStyle="bold" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/ly13"
-            android:layout_width="@dimen/_40sdp"
-            android:layout_height="@dimen/_45sdp"
-            android:layout_below="@id/ly9"
-            android:layout_marginLeft="@dimen/_25sdp"
-            android:layout_toRightOf="@+id/ly12">
-
-            <ImageView
-                android:id="@+id/gambar9"
-                android:layout_width="@dimen/_25sdp"
-                android:layout_height="@dimen/_25sdp"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/_5sdp"
-                android:src="@drawable/lain" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/gambar9"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/_6sdp"
-                android:text="Lainnya"
-                android:textColor="@color/colorOnPrimary"
-                android:textSize="@dimen/_8sdp"
-                android:textStyle="bold" />
-        </RelativeLayout>
-    </RelativeLayout>
-
-    <LinearLayout
+    <ScrollView
+        android:id="@+id/scrol"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/akhir">
+        android:layout_below="@+id/top"
+        android:scrollbars="none">
 
-        <HorizontalScrollView
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_50sdp">
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/tengah"
+                android:layout_width="@dimen/_230sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_100sdp"
+                android:background="@drawable/selector2">
+
+                <RelativeLayout
+                    android:id="@+id/ly2"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:background="@drawable/selector3">
+
+                    <ImageView
+                        android:id="@+id/logo"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/file" />
+
+                    <TextView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_toRightOf="@id/logo"
+                        android:text="Rp. 100.000"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/ly3"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_toRightOf="@id/ly2">
+
+                    <ImageView
+                        android:id="@+id/satu"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:src="@drawable/upp" />
+
+                    <TextView
+                        android:layout_width="@dimen/_55sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/satu"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="Isi Saldo"
+                        android:textColor="@color/colorOnPrimary"
+                        android:textSize="@dimen/_8sdp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ly4"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_toRightOf="@id/ly3">">
+
+                    <ImageView
+                        android:id="@+id/dua"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:src="@drawable/plus" />
+
+                    <TextView
+                        android:layout_width="@dimen/_55sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/dua"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:text="Bayar"
+                        android:textColor="@color/colorOnPrimary"
+                        android:textSize="@dimen/_8sdp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ly5"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_toRightOf="@id/ly4">">
+
+                    <ImageView
+                        android:id="@+id/tiga"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:src="@drawable/rocket" />
+
+                    <TextView
+                        android:layout_width="@dimen/_55sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tiga"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="Eksplor"
+                        android:textColor="@color/colorOnPrimary"
+                        android:textSize="@dimen/_8sdp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/akhir"
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="@dimen/_105sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_200sdp"
+                android:background="@drawable/selector2">
+
+                <RelativeLayout
+                    android:id="@+id/ly6"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_marginLeft="@dimen/_20sdp">
+
+                    <ImageView
+                        android:id="@+id/gambar1"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:src="@drawable/motor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/gambar1"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="GoRide"
+                        android:textColor="@color/colorOnPrimary"
+                        android:textSize="@dimen/_8sdp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ly7"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:layout_toRightOf="@id/ly6">
+
+                    <ImageView
+                        android:id="@+id/gambar2"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:src="@drawable/car" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/gambar2"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:text="GoCar"
+                        android:textColor="@color/colorOnPrimary"
+                        android:textSize="@dimen/_8sdp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ly8"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:layout_toRightOf="@id/ly7">
+
+                    <ImageView
+                        android:id="@+id/gambar3"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:src="@drawable/food" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/gambar3"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="GoFood"
+                        android:textColor="@color/colorOnPrimary"
+                        android:textSize="@dimen/_8sdp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ly9"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:layout_toRightOf="@id/ly8">
+
+                    <ImageView
+                        android:id="@+id/gambar4"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:src="@drawable/send" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/gambar4"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="GoSend"
+                        android:textColor="@color/colorOnPrimary"
+                        android:textSize="@dimen/_8sdp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ly10"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_below="@id/ly6"
+                    android:layout_marginLeft="@dimen/_20sdp">
+
+                    <ImageView
+                        android:id="@+id/gambar6"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:src="@drawable/mart" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/gambar6"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:text="GoMart"
+                        android:textColor="@color/colorOnPrimary"
+                        android:textSize="@dimen/_8sdp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ly11"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_below="@id/ly7"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:layout_toRightOf="@+id/ly10">
+
+                    <ImageView
+                        android:id="@+id/gambar7"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:src="@drawable/pulsa" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/gambar7"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:text="GoPulsa"
+                        android:textColor="@color/colorOnPrimary"
+                        android:textSize="@dimen/_8sdp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/ly12"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_below="@id/ly8"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:layout_toRightOf="@+id/ly11">
+
+                    <ImageView
+                        android:id="@+id/gambar8"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:src="@drawable/mart" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/gambar8"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:text="GoClub"
+                        android:textColor="@color/colorOnPrimary"
+                        android:textSize="@dimen/_8sdp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ly13"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_below="@id/ly9"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:layout_toRightOf="@+id/ly12">
+
+                    <ImageView
+                        android:id="@+id/gambar9"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:src="@drawable/lain" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/gambar9"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_6sdp"
+                        android:text="Lainnya"
+                        android:textColor="@color/colorOnPrimary"
+                        android:textSize="@dimen/_8sdp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/akhir">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/akhir"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_250sdp"
+                            android:layout_height="@dimen/_80sdp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/gojek" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_250sdp"
+                            android:layout_height="@dimen/_80sdp"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/gofood" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_250sdp"
+                            android:layout_height="@dimen/_80sdp"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/gojek2"
+
+                            />
+
+                        <ImageView
+                            android:layout_width="@dimen/_250sdp"
+                            android:layout_height="@dimen/_80sdp"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/gofood2" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_250sdp"
+                            android:layout_height="@dimen/_80sdp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/gojek" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                android:layout_below="@+id/footer"
+                >
 
                 <ImageView
                     android:layout_width="@dimen/_250sdp"
                     android:layout_height="@dimen/_80sdp"
                     android:scaleType="centerCrop"
+                    android:layout_marginLeft="@dimen/_30sdp"
                     android:src="@drawable/gojek" />
 
                 <ImageView
                     android:layout_width="@dimen/_250sdp"
                     android:layout_height="@dimen/_80sdp"
-                    android:layout_marginLeft="@dimen/_5sdp"
                     android:scaleType="centerCrop"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
                     android:src="@drawable/gofood" />
 
                 <ImageView
                     android:layout_width="@dimen/_250sdp"
                     android:layout_height="@dimen/_80sdp"
-                    android:layout_marginLeft="@dimen/_5sdp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/gojek2"
-
-                    />
-
-                <ImageView
-                    android:layout_width="@dimen/_250sdp"
-                    android:layout_height="@dimen/_80sdp"
-                    android:layout_marginLeft="@dimen/_5sdp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/gofood2"
-                    />
-
-                <ImageView
-                    android:layout_width="@dimen/_250sdp"
-                    android:layout_height="@dimen/_80sdp"
-                    android:scaleType="centerCrop"
+                    android:layout_marginLeft="@dimen/_30sdp"
                     android:src="@drawable/gojek" />
 
+                <ImageView
+                    android:layout_width="@dimen/_250sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:src="@drawable/gofood" />
+
             </LinearLayout>
-        </HorizontalScrollView>
+        </RelativeLayout>
 
-    </LinearLayout>
-
-
+    </ScrollView>
 </RelativeLayout>
+

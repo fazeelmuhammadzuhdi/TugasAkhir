@@ -44,6 +44,10 @@ class DashboardFragment : Fragment() {
             val intent = Intent(this@DashboardFragment.requireContext(), ProfilActivity::class.java)
             startActivity(intent)
         }
+        binding.ly9.setOnClickListener {
+            val intent = Intent(this@DashboardFragment.requireContext(), InputActivity::class.java)
+            startActivity(intent)
+        }
         binding.ly5.setOnClickListener {
             val intent = Intent(this@DashboardFragment.requireContext(), PerbandinganBindingActivity::class.java)
             startActivity(intent)
