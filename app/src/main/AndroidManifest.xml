@@ -3,7 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.tugasakhir">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
+        android:name=".util.MyApp"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
